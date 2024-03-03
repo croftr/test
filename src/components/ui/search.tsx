@@ -7,7 +7,7 @@ import { useState, useEffect } from 'react';
 
 import { config } from '../../app/app.config';
 
-import ky from 'ky-universal';
+import ky from 'ky';
 
 import { useMpStore } from '@/lib/store';
 
@@ -16,9 +16,7 @@ const EARLIEST_FROM_DATE = "2003-11-12";
 // useRouter
 import { useRouter } from 'next/navigation'
  
-export default function Search({
-
-}) {
+export default function Search() {
 
     const router = useRouter()
  
